@@ -1,0 +1,524 @@
+/* Universal Styling */
+
+h1, h2, h3, h4, h5, p, span, nav, a, ul, li {
+  font-family: "trebuchet ms", sans-serif;
+  color: rgb(44, 44, 44);
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p, a {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+/* Header Section */
+
+header {
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#nav-desktop a {
+  margin-left: 16px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+#academy {
+  font-weight: lighter;
+  color: grey;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+/* Header Mobile */
+
+@media only screen and (max-width: 768px) {
+
+.logo {
+  display: none;
+}
+
+#nav-desktop {
+  display: none;
+}
+#nav-mobile, #nav-mobile ul {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+}
+
+/* Banner Section */
+
+.banner {
+  background-color: lightgrey;
+  display: flex;
+}
+
+.bannerimg {
+  width: 60%;
+  height: auto;
+  margin: 32px 40px 32px 24px;
+}
+
+.bannerimg img {
+  width: 100%;
+  height: auto;
+}
+
+.bannerinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 320px;
+}
+
+.bannerinfo h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.bannerinfo h2 {
+  margin-bottom: 40px;
+}
+
+.bannerinfo a {
+  color: white;
+  font-weight: bold;
+  background-color: grey;
+  width: 320px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  text-align: center;
+  transition: all 500ms ease 200ms;
+}
+
+.bannerinfo a:hover {
+  background-color: black;
+}
+
+/* Banner Mobile */
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+.bannerimg img {
+  display: none;
+}
+
+.bannerimg {
+  width: 100%;
+  height: 320px;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+}
+
+.bannerinfo {
+  text-align: center;
+  width: 100%;
+}
+
+.bannerinfo h1 {
+  font-size: 2rem;
+}
+
+.bannerinfo h2 {
+  font-size: 1.2rem;
+}
+
+.bannerinfo a {
+  font-size: 0.8rem;
+}
+
+.bannerinfo h1, .bannerinfo h2, .bannerinfo a {
+  width: 50%;
+  align-self: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+}
+
+/* Practicing Section */
+
+.practicecontent {
+  display: flex;
+}
+
+.man-reading {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px 32px 24px;
+}
+
+.man-reading img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.man-reading h5 {
+  margin-bottom: 24px;
+}
+
+.man-reading p {
+  padding-bottom: 24px;
+}
+
+.practice-side {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #C5CAD7;
+  width: 40%;
+  margin-bottom: 32px;
+}
+
+.infobox {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.infobox img {
+  width: 35%;
+  margin: 16px 16px 16px 16px;
+}
+
+.infobox-text {
+  width: 65%;
+}
+
+.infobox-text p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.infobox-text span a{
+  color: blue;
+}
+
+#guest {
+  background-color: lightgrey;
+}
+
+.practice-mobile {
+  display: none;
+}
+
+/* Practicing Mobile */
+
+@media only screen and (max-width: 768px) {
+  section {
+    justify-content: center;
+  }
+
+  .practicecontent {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .man-reading {
+    display: none;
+  }
+
+  .infoboxes {
+    display: none;
+  }
+
+  .infobox {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+  }
+
+  #guest {
+    background-color: white;
+  }
+
+  .infobox img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+  }
+
+.infobox-text {
+  width: 80%;
+  margin-bottom: 24px;
+}
+
+  .practice-side {
+    width: 100%;
+    border-left: 0px solid #000000;
+  }
+
+  .practice-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Learning Section */
+
+.learning {
+  background-color: lightgrey;
+  display: block;
+}
+
+.learning h5 {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.learningboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 64px 32px 64px;
+}
+
+.lbox {
+  max-width: 25%;
+  background-color: white;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.lbox img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.lbox h4 {
+  padding-left: 16px;
+}
+
+.lbox p {
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+.textbox {
+  padding-bottom: 24px;
+}
+
+.learning-mobile {
+  display: none;
+}
+
+/* Learning Mobile */
+
+@media only screen and (max-width: 768px) {
+
+.learningboxes {
+  display: none;
+}
+
+.learning {
+  width: 100%;
+  background-color: white;
+}
+
+.learning h5 {
+  padding-bottom: 16px;
+}
+.learn-mob-container {
+  align-items: center;
+}
+
+.learning-mobile {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+.learning-mobile h4 {
+  width: 50%;
+  text-align: left;
+  background-color: lightgrey;
+  padding: 16px 0px 16px 16px;
+  margin-bottom: 8px;
+}
+
+}
+
+/* Exhibit Section */
+
+.exhibit {
+  display: block;
+}
+
+.exhibit h5 {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.exhibit-content {
+  display: inline-flex;
+}
+
+.video-mobile {
+  display: none;
+}
+
+video {
+  margin-bottom: 24px;
+  border: 4px solid #000000;
+}
+
+.exhibit-video {
+  margin-right: 16px;
+  margin-left: 24px;
+  width: 60%;
+}
+
+.exhibit-video h4 {
+  padding-bottom: 8px;
+}
+
+.exhibit-video p {
+  padding-bottom: 32px;
+  padding-top: 8px;
+}
+
+.exhibit-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit-block {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.exhibit-block img {
+  width: 35%;
+  margin: 16px 16px 16px 16px;
+  height: auto;
+}
+.exhibit-textbox {
+  margin-right: 16px;
+}
+
+.exhibit-textbox p {
+  padding-top: 16px;
+}
+
+#first {
+  background-color: lightgrey;
+}
+
+/* Exhibit Mobile */
+
+@media only screen and (max-width: 768px) {
+.video-mobile {
+  display: block;
+}
+
+.exhibit-content {
+  display: none;
+}
+
+.exhibit h5 {
+  padding-bottom: 16px;
+}
+
+}
+
+/* Footer Section */
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin-left: 24px;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #C5CAD7;
+}
+
+footer nav ul li {
+  padding-left: 16px;
+}
+
+/* Footer Mobile */
+
+@media only screen and (max-width: 768px) {
+footer {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: auto;
+  border-top: 0px solid #C5CAD7;
+}
+
+footer nav {
+  display: none;
+}
+}
